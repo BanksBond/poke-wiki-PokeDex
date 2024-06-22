@@ -59,14 +59,13 @@ export default function App() {
     <>
       <Header />
       <Main>
-        <div className="loader"></div>
-        {/* {pokemonData.length === 0 ? (
+        {pokemonData.length === 0 ? (
           <div className="loader"></div>
         ) : (
           pokemonData.map((pokemon, index) => (
             <Card key={index} pokemon={pokemon} />
           ))
-        )} */}
+        )}
       </Main>
       <Footer />
     </>
