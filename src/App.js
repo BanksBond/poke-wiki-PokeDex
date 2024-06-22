@@ -41,7 +41,7 @@ export default function App() {
     };
 
     fetchPokemon();
-  });
+  }, []);
 
   const getPokemon = async (id) => {
     try {
@@ -59,13 +59,14 @@ export default function App() {
     <>
       <Header />
       <Main>
-        {pokemonData.length === 0 ? (
+        <div className="loader"></div>
+        {/* {pokemonData.length === 0 ? (
           <div className="loader"></div>
         ) : (
           pokemonData.map((pokemon, index) => (
             <Card key={index} pokemon={pokemon} />
           ))
-        )}
+        )} */}
       </Main>
       <Footer />
     </>
